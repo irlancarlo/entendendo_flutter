@@ -236,3 +236,34 @@ void mainFormatText() {
         ),
       )));
 }
+
+/* Colunas e linhas */
+void mainColumnRow(){
+  runApp(MaterialApp(
+    title: "Entendo colunas e linhas",
+    home: Container(
+      // child: column(),
+      child: row(),
+    ),
+  ));
+}
+
+Row row() {
+  return Row(
+    children: [
+      Text("T1"),
+      Text("T2"),
+      Text("T3"),
+    ],
+  );
+}
+
+Column column() {
+  return Column(
+      children: [
+        Text("T1"),
+        Text("T2"),
+        Text("T3"),
+      ],
+    );
+}
